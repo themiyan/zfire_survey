@@ -1,0 +1,22 @@
+FROM DR8
+
+The files in this directory contain the fluxes corresponding to
+restframe filters. These are in the files udsz.*.rf files, where * is
+13, 15, and 21 for the U, V, and J filters, respectively. The fluxes
+are given in the 6th column of these files.
+
+This directory also includes the zphot catalog for the photometric
+catalog uds8_v0.2.test.cat; you might want to make sure that this
+matches the zphots that you've been using (but this is just my
+standard zphots, and doesn't included the MOSFIRE zspecs).
+
+To get the colors, you would do something like this (IDL code):
+
+readcol,'../EAZY_v02/OUTPUT/udsz.13.rf',tid,tz,X,X,X,LU
+MU = -2.5*alog10(LU)+25.
+readcol,'../EAZY_v02/OUTPUT/udsz.15.rf',tid,tz,X,X,X,LV
+MV = -2.5*alog10(LV)+25.
+readcol,'../EAZY_v02/OUTPUT/udsz.21.rf',tid,tz,X,X,X,LJ
+MJ = -2.5*alog10(LJ)+25.
+UV = MU-MV
+VJ = MV-MJ
