@@ -10,9 +10,9 @@ Data will be available after ZFOURGE public data release.
 
 More information on the survey can be found in http://zfire.swinburne.edu.au
 
-Any questions or problems with the codes please email tnanayk@astro.swin.edu.au
+Any questions or problems with the codes please email tnanayak@astro.swin.edu.au
 
--Themiya 25/08/2016
+Themiya 25/08/2016
 =======
 
 Codes for zfire survey data analysis and figures are being updated here. 
