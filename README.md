@@ -18,9 +18,3 @@ Themiya 25/08/2016
 
 Codes for zfire survey data analysis and figures are being updated here. 
 More information on the survey can be found in http://zfire.swinburne.edu.au
-
-<<<<<<< HEAD
->>>>>>> origin/master
-=======
-Codes will be fully updated after the zfourge public data release. 
->>>>>>> origin/master
